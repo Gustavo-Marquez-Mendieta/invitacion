@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Bienvenidos a nuestra boda!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: url('https://media.istockphoto.com/id/1460511576/es/v%C3%ADdeo/p%C3%A9talos-de-rosa-que-caen-fondo-del-d%C3%ADa-de-san-valent%C3%ADn.jpg?s=640x640&k=20&c=aQje3Awt_6Htn-rfyokDlTpy3gGltYnzifv_CmMw_KU=') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .contenedor {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      text-align: center;
+      border-radius: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-style: italic;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  <script>
+    // Redirigir después de 10 segundos
+    setTimeout(() => {
+      window.location.href = "invitacion.html";
+    }, 5000);
+  </script>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Gabriela & Gustavo</h1>
+    <p>¡Bienvenidos a nuestra boda!</p>
+    <p>El amor está en el aire... 💕</p>
+  </div>
+</body>
+</html>

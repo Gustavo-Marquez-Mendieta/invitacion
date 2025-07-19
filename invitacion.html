@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriela & Gustavo - ¡Nos Casamos!</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <div class="overlay"></div>
+
+  <div class="invitacion">
+    <h1 class="titulo">Gabriela & Gustavo</h1>
+    <p class="subtitulo">¡Nos casamos!</p>
+
+    <div class="detalle fade-in">
+      <p>Te invitamos a compartir con nosotros este día tan especial.</p>
+      <p><strong>📅 Fecha:</strong> 22 de noviembre de 2025</p>
+      <p><strong>🕔 Hora:</strong> 14:00 hrs</p>
+      <p><strong>📍 Lugar:</strong> Salon de eventos REAL, Cochabamba</p>
+      <a href="https://maps.app.goo.gl/z2BuujDchW7GWpai6" target="_blank" class="btn animado">Ver ubicación</a>
+    </div>
+
+    <div id="contador" class="fade-in">
+      <h3>⏳ Faltan:</h3>
+      <div id="reloj"></div>
+    </div>
+
+    <div class="rsvp fade-in">
+      <p>Confirma tu asistencia</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMYdIooXyPJH1mEoe4QIZbbcwqxz5iSXJAnU31ZdqI8uUlAg/viewform?usp=header" target="_blank" class="btn animado">Confirmar Asistencia</a>
+
+    </div>
+
+    <p class="mensaje fade-in">“El amor se celebra, se honra y se vive... ¡Y queremos hacerlo contigo!”</p>
+  </div>
+
+  <script src="contador.js"></script>
+</body>
+</html>
