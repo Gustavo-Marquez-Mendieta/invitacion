@@ -154,6 +154,7 @@ body {
 .galeria1 img:hover {
   transform: scale(1.05);
 }
+
 .galeria {
   display: flex;
   justify-content: center;
@@ -202,5 +203,53 @@ body {
   100% {
     top: -10%;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .invitacion {
+    padding: 20px 15px;
+  }
+
+  .titulo {
+    font-size: 2.5em;
+  }
+
+  .subtitulo {
+    font-size: 1.5em;
+  }
+
+  .detalle,
+  .rsvp,
+  .mensaje,
+  #contador {
+    font-size: 1em;
+  }
+
+  .galeria1 img {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.95em;
+  }
+
+  #reloj {
+    font-size: 1.2em;
+  }
+
+  #playMusica {
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-size: 0.9em;
   }
 }
