@@ -233,7 +233,8 @@ body {
 
   .galeria img {
     width: 100%;
-    max-width: 650px;
+    max-width: 280px;
+
   }
 
   .btn {
