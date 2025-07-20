@@ -164,12 +164,22 @@ body {
 }
 
 .galeria img {
-  width: 280px;
-  height: 350px;
+  flex: 1 1 45%;
+  max-width: 45%;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease;
+  object-fit: cover;
 }
+
+@media screen and (max-width: 600px) {
+  .galeria img {
+    flex: 1 1 80%;
+    max-width: 80%;
+  }
+}
+
 
 .galeria img:hover {
   transform: scale(1.05);
