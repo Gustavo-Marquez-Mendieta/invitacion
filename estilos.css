@@ -40,7 +40,10 @@ body {
   margin-top: 0;
 }
 
-.detalle, .rsvp, .mensaje, #contador {
+.detalle,
+.rsvp,
+.mensaje,
+#contador {
   margin-top: 25px;
   font-size: 1.1em;
 }
@@ -90,6 +93,7 @@ body {
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
@@ -103,10 +107,100 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
+  }
+}
+
+#playMusica {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #ff6f91;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+/* Galería de fotos */
+.galeria1 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.galeria1 img {
+  width: 650px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria1 img:hover {
+  transform: scale(1.05);
+}
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 280px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Corazones flotando */
+.corazones::before,
+.corazones::after {
+  content: "💖 💕 💗 💓 💘 💝";
+  position: fixed;
+  font-size: 2rem;
+  animation: flotar 10s linear infinite;
+  opacity: 0.6;
+}
+
+.corazones::after {
+  animation-delay: 5s;
+  left: 60%;
+}
+
+@keyframes flotar {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    top: -10%;
+    opacity: 0;
   }
 }
