@@ -8,23 +8,30 @@ body {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   position: fixed;
   inset: 0;
   z-index: -1;
+  background-image: url('imagenes/gaby.jpeg');
+  /* Usa tu propia imagen aquí */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .invitacion {
   text-align: center;
   max-width: 700px;
-  margin: auto;
-  padding: 40px 30px;
+  margin: 30px auto;
+  padding: 30px 20px;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   animation: slideUp 1.5s ease-out;
 }
+
 
 .titulo {
   font-family: 'Great Vibes', cursive;
